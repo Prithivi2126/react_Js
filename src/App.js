@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+
+
+const Register = lazy(() => import("./component/Register"));
+const List = lazy(() => import("./component/List"));
+const ComponentA = lazy(()=> import("./interceptor/componentA"))
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/register" element={<Register />} />
+            <Route path="/list" element={<List />} />
+            <Route path='/compA' element={<ComponentA />}></Route>
+          \
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
     </div>
   );
 }

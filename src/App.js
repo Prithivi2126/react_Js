@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import UselayoutEffect from "./hook/UselayoutEffect";
+import Styled from "./styled-component/Styled";
 
 
 
@@ -21,6 +22,7 @@ function App() {
             <Route path='/compA' element={<ComponentA />}></Route>
             <Route path='/memo' element={<Usememo />}></Route>
             <Route path='/uselayout' element={<UselayoutEffect />}></Route>
+            <Route path='/styled' element={<Styled />}></Route>
           </Routes>
         </Suspense>
       </BrowserRouter>

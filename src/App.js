@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import UselayoutEffect from "./hook/UselayoutEffect";
 import Styled from "./styled-component/Styled";
+import UseCallback from "./hook/UseCallback";
+import Usetransition from "./hook/Usetransition";
 
 
 
@@ -23,6 +25,8 @@ function App() {
             <Route path='/memo' element={<Usememo />}></Route>
             <Route path='/uselayout' element={<UselayoutEffect />}></Route>
             <Route path='/styled' element={<Styled />}></Route>
+            <Route path='/callback' element={<UseCallback />}></Route>
+            <Route path='/transition' element={<Usetransition />}></Route>
           </Routes>
         </Suspense>
       </BrowserRouter>

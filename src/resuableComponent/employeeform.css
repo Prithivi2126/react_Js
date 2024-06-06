@@ -1,0 +1,20 @@
+body {
+    overflow-x: hidden;
+    background-color: rgba(220, 220, 220, 0.451) !important;
+  
+  }
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+    border-radius: 10px !important;
+
+  }
+  
+  
+  .content {
+    background-color: #F6F7FC;
+  }
+  
+  .form-control {
+    height: 3rem;
+  }

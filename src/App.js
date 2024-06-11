@@ -6,6 +6,7 @@ import Styled from "./styled-component/Styled";
 import UseCallback from "./hook/UseCallback";
 import Usetransition from "./hook/Usetransition";
 import Employeeform from "./resuableComponent/Employeeform";
+import Registration from "./materialui/Registration";
 
 
 
@@ -28,6 +29,7 @@ function App() {
             <Route path='/styled' element={<Styled />}></Route>
             <Route path='/callback' element={<UseCallback />}></Route>
             <Route path='/transition' element={<Usetransition />}></Route>
+            <Route path='/' element={<Registration />}></Route>
             <Route path='/form' element={<Employeeform />}></Route>
           </Routes>
         </Suspense>

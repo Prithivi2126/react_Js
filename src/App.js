@@ -7,6 +7,7 @@ import UseCallback from "./hook/UseCallback";
 import Usetransition from "./hook/Usetransition";
 import Employeeform from "./resuableComponent/Employeeform";
 import Registration from "./materialui/Registration";
+import Materialui from "./materialui/Materialui";
 
 
 
@@ -31,6 +32,7 @@ function App() {
             <Route path='/transition' element={<Usetransition />}></Route>
             <Route path='/' element={<Registration />}></Route>
             <Route path='/form' element={<Employeeform />}></Route>
+            <Route path='/materialui' element={<Materialui />}></Route>
           </Routes>
         </Suspense>
       </BrowserRouter>

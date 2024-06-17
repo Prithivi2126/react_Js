@@ -8,6 +8,7 @@ import Usetransition from "./hook/Usetransition";
 import Employeeform from "./resuableComponent/Employeeform";
 import Registration from "./materialui/Registration";
 import Materialui from "./materialui/Materialui";
+import MyForm from "./react-hook-form/Myform";
 
 
 
@@ -33,6 +34,7 @@ function App() {
             <Route path='/' element={<Registration />}></Route>
             <Route path='/form' element={<Employeeform />}></Route>
             <Route path='/materialui' element={<Materialui />}></Route>
+            <Route path='/reactform' element={<MyForm />}></Route>
           </Routes>
         </Suspense>
       </BrowserRouter>

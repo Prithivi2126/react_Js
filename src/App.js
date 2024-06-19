@@ -9,6 +9,7 @@ import Employeeform from "./resuableComponent/Employeeform";
 import Registration from "./materialui/Registration";
 import Materialui from "./materialui/Materialui";
 import MyForm from "./react-hook-form/Myform";
+import Registerform from "./react-hook-form/Registerform";
 
 
 
@@ -35,6 +36,7 @@ function App() {
             <Route path='/form' element={<Employeeform />}></Route>
             <Route path='/materialui' element={<Materialui />}></Route>
             <Route path='/reactform' element={<MyForm />}></Route>
+            <Route path="/registerform" element={<Registerform />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
